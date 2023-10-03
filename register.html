@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="WEB-INF/bootstrap-4.6.2-dist">
+
+  <title>注册</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+</nav>
+<a href="index.html" class="btn btn-primary">首页</a>
+<a href="login.html" class="btn btn-primary">返回登录</a>
+<script src="WEB-INF/bootstrap-4.6.2-dist/js/bootstrap.js"></script>
+<div class="container">
+  <h1>注册</h1>
+  <form id="registerForm" action="#" method="post">
+    <div class="mb-3">
+      <label for="username" class="form-label">用户名</label>
+      <input type="text" class="form-control" id="username" name="username" required>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">密码</label>
+      <input type="password" class="form-control" id="password" name="password" required>
+    </div>
+    <div class="mb-3">
+      <label for="confirmPassword" class="form-label">确认密码</label>
+      <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+    </div>
+    <button type="submit" class="btn btn-primary">注册</button>
+  </form>
+</div>
+<script>
+  // 使用JavaScript监听表单提交事件，执行前端表单校验
+  document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // 阻止默认提交行为
+    // 在此处编写前端表单校验逻辑，根据条件添加或移除 is-invalid 类
+  });
+</script>
+</body>
+</html>
